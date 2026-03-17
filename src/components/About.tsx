@@ -18,7 +18,7 @@ const About = () => {
                         <div className="md:col-span-1 rounded-2xl overflow-hidden aspect-square border border-white/10 bg-white/5 flex items-center justify-center">
                             {/* Profile Image - Fallback using div for aesthetic until image is placed */}
                             <img
-                                src="https://mrnaveed-stack.github.io/Portfolio/33.jpg"
+                                src="6.jpg"
                                 alt="Muhammad Naveed Qasim"
                                 className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-500"
                             />
