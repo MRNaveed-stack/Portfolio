@@ -31,7 +31,7 @@ const certifications = [
         title: "Visio Spark Debugging Certificate",
         issuer: "Visio Spark",
         description: "Advanced debugging, troubleshooting, and problem-solving certification.",
-        pdfLink: "#"
+        pdfLink: "5.jpeg"
     }
 ];
 
