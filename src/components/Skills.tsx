@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Server, Database, ShieldCheck, LayoutTemplate, Box, Globe } from 'lucide-react';
 
