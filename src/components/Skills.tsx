@@ -26,7 +26,7 @@ const skillCategories = [
     {
         title: "Frontend Integration",
         icon: <LayoutTemplate className="w-6 h-6 text-pink-400" />,
-        skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS"]
+        skills: ["React", "Tailwind CSS", "HTML/CSS"]
     },
     {
         title: "Tools & Ecosystems",
