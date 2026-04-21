@@ -15,6 +15,13 @@ const projects = [
         stack: ["Node.js", "Express", "MongoDB", "Auth Lifecycle"],
         links: { github: "https://github.com/MRNaveed-stack/node-secure-backend-api" }
     },
+      {
+        title: "Go Multi Warehouse Backend",
+        description: "Production-grade pure Go backend featuring JWT/RBAC, idempotent APIs, Redis, and multi-warehouse inventory. Includes workers and audit logs; deployed on AWS EC2 with Nginx/HTTPS.",
+        stack: ["Go", "PostgreSQL", "Redis", "AWS-EC2"],
+        links: { github: "https://github.com/MRNaveed-stack/go-multi-warehouse-backend" },
+        
+    },
     {
         title: "PyMeet",
         description: "Real-time communication platform bridging Jitsi and custom Firebase signaling for virtual meetings.",
