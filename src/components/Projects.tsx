@@ -10,6 +10,27 @@ const projects = [
         links: { github: "https://github.com/MRNaveed-stack/Performance-Management-System" }
     },
     {
+  title: "LinkPulse",
+  description: "Developer-first link-in-bio platform with customizable profiles, real-time click analytics, secure JWT & Google OAuth authentication, and production deployment on AWS ECS Fargate.",
+  stack: [
+    "Go",
+    "Gin",
+    "React",
+    "TypeScript",
+    "PostgreSQL",
+    "Docker",
+    "Terraform",
+    "AWS ECS Fargate",
+    "RDS",
+    "ECR",
+    "ALB",
+    "GitHub Actions"
+  ],
+  links: {
+    github: "https://github.com/MRNaveed-stack/LinkPulse"
+  }
+},
+    {
         title: "Node Secure Backend APIs",
         description: "Robust authentication system featuring refresh tokens, password resets, and protected CRUD infrastructure.",
         stack: ["Node.js", "Express", "MongoDB", "Auth Lifecycle"],
