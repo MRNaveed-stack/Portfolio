@@ -51,10 +51,7 @@ className="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden"
                                     <li className="flex gap-3"><span className="text-purple-400">→</span> CI/CD pipelines with GitHub Actions</li>
                                 </ul>
                             </div>
-
-                            <p>
-                                Currently expanding toward AI-powered applications and full-stack AI engineering while continuing to deepen my expertise in backend systems and cloud infrastructure.
-                            </p>
+<p> Building toward becoming a backend-focused full-stack and AI engineer, with a strong focus on Go, Node.js, React, AWS, cloud infrastructure, and production-ready systems. </p>
                         </div>
                     </div>
                 </div>
