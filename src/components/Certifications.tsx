@@ -9,6 +9,13 @@ const certifications = [
         description: "Completed an intensive backend development internship focusing on production API design and performance profiling.",
         pdfLink: "3.pdf"
     },
+     {
+        title: "Erasmus+ CATCH_VR Summer School 2026",
+        issuer: "GIK Institute",
+        description: "Hands-on bootcamp focused on Immersive Technologies, IoT, Digital Twins, Unity 3D, sensors, Arduino, and hardware-software integration.",
+        pdfLink: "catch-vr-certificate.jpeg"
+    },
+    
     {
         title: "Freelance Certified Developer",
         issuer: "micro1",
