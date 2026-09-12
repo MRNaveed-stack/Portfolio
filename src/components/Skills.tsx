@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { Server, Database, ShieldCheck, LayoutTemplate, Box, Globe } from 'lucide-react';
 
@@ -6,32 +5,32 @@ const skillCategories = [
     {
         title: "Backend & Architecture",
         icon: <Server className="w-6 h-6 text-purple-400" />,
-        skills: ["Go (Gin)", "Node.js (Express)", "Python (Flask)", "RESTful APIs", "Concurrency"]
+        skills: ["Go (Gin)", "Node.js (Express)", "Python (Flask)", "RESTful APIs", "gRPC", "WebSockets", "Concurrency"]
     },
     {
-        title: "Data Engineering",
+        title: "Frontend Engineering",
+        icon: <LayoutTemplate className="w-6 h-6 text-pink-400" />,
+        skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Zod", "Zustand", "HTML/CSS"]
+    },
+    {
+        title: "Databases & Data",
         icon: <Database className="w-6 h-6 text-blue-400" />,
         skills: ["PostgreSQL", "MongoDB", "SQLite", "SQL Optimization", "Data Modeling"]
     },
     {
-        title: "Security & Auth",
+        title: "Security & Authentication",
         icon: <ShieldCheck className="w-6 h-6 text-green-400" />,
         skills: ["JWT Lifecycle", "Refresh Tokens", "Role-Based Access", "Rate Limiting"]
     },
     {
-        title: "Infrastructure",
+        title: "Cloud & DevOps",
         icon: <Globe className="w-6 h-6 text-orange-400" />,
-        skills: ["Linux Servers", "VPS Hosting", "Render", "Nginx", "Docker Basics"]
+        skills: ["AWS ECS Fargate", "AWS RDS", "AWS ECR", "Application Load Balancer", "Docker", "Terraform", "GitHub Actions", "CI/CD"]
     },
     {
-        title: "Frontend Integration",
-        icon: <LayoutTemplate className="w-6 h-6 text-pink-400" />,
-        skills: ["React", "Tailwind CSS", "HTML/CSS"]
-    },
-    {
-        title: "Tools & Ecosystems",
+        title: "Tools & Ecosystem",
         icon: <Box className="w-6 h-6 text-yellow-400" />,
-        skills: ["Git/GitHub", "Gemini AI API", "Postman", "WebSockets"]
+        skills: ["Git/GitHub", "Linux", "Nginx", "VPS Hosting", "Render", "Postman", "Gemini AI API"]
     }
 ];
 
