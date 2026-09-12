@@ -1,14 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Braces, Cloud, Database, Cpu, Container, Network } from 'lucide-react';
-
-const orbitItems = [
-    { label: 'Go', icon: Braces, className: 'top-1/2 left-1/2 text-cyan-300' },
-    { label: 'AWS', icon: Cloud, className: 'top-1/2 left-1/2 text-orange-300' },
-    { label: 'Postgres', icon: Database, className: 'top-1/2 left-1/2 text-blue-300' },
-    { label: 'AI', icon: Cpu, className: 'top-1/2 left-1/2 text-purple-300' },
-    { label: 'Docker', icon: Container, className: 'top-1/2 left-1/2 text-sky-300' },
-    { label: 'gRPC', icon: Network, className: 'top-1/2 left-1/2 text-violet-300' },
-];
+import { ArrowRight, Mail } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -23,37 +14,6 @@ const Hero = () => {
                 transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -right-32 top-20 w-72 h-72 rounded-full bg-purple-500/10 blur-3xl pointer-events-none"
             />
-
-            <div className="absolute inset-0 pointer-events-none hidden md:block" aria-hidden="true">
-                <div className="absolute left-1/2 top-1/2 w-[300px] h-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-400/10 animate-orbit" />
-                <div className="absolute left-1/2 top-1/2 w-[380px] h-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-purple-400/10 animate-orbit-reverse" />
-
-                {orbitItems.map(({ label, icon: Icon, className }, index) => (
-                    <motion.div
-                        key={label}
-                        initial={{ opacity: 0, scale: 0.7 }}
-                        animate={{ opacity: [0.45, 0.9, 0.45], scale: [0.96, 1.04, 0.96] }}
-                        transition={{ duration: 3 + index * 0.4, repeat: Infinity, ease: 'easeInOut', delay: index * 0.3 }}
-                        className={`absolute ${className} -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 px-3 py-2 rounded-xl border border-white/10 bg-slate-900/60 backdrop-blur-md shadow-lg text-xs font-semibold`}
-                        style={{ transform: `translate(-50%, -50%) rotate(${index * 60}deg) translateX(${index % 2 === 0 ? 150 : 190}px) rotate(-${index * 60}deg)` }}
-                    >
-                        <Icon className="w-3.5 h-3.5" />
-                        {label}
-                    </motion.div>
-                ))}
-
-                {[...Array(12)].map((_, index) => (
-                    <span
-                        key={index}
-                        className="absolute w-1 h-1 rounded-full bg-blue-300/60 animate-particle"
-                        style={{
-                            left: `${12 + ((index * 17) % 76)}%`,
-                            top: `${15 + ((index * 23) % 68)}%`,
-                            animationDelay: `${index * 0.35}s`,
-                        }}
-                    />
-                ))}
-            </div>
 
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
