@@ -5,12 +5,12 @@ const skillCategories = [
     {
         title: "Backend & Architecture",
         icon: <Server className="w-6 h-6 text-purple-400" />,
-        skills: ["Go (Gin)", "Node.js (Express)", "Python (Flask)", "RESTful APIs", "gRPC", "WebSockets", "Concurrency"]
+        skills: ["Go (Gin)", "Node.js (Express)", "Python", "RESTful APIs", "gRPC", "WebSockets", "Concurrency"]
     },
     {
         title: "Frontend Engineering",
         icon: <LayoutTemplate className="w-6 h-6 text-pink-400" />,
-        skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Zod", "Zustand", "HTML/CSS"]
+        skills: ["React", "TypeScript", "Tailwind CSS", "Zod", "Zustand", "HTML/CSS"]
     },
     {
         title: "Databases & Data",
