@@ -5,6 +5,15 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
+const backgroundNodes = [
+  { left: '8%', top: '18%', delay: '0s' },
+  { left: '22%', top: '72%', delay: '2s' },
+  { left: '48%', top: '28%', delay: '4s' },
+  { left: '72%', top: '64%', delay: '1s' },
+  { left: '91%', top: '20%', delay: '3s' },
+  { left: '82%', top: '88%', delay: '5s' },
+];
+
 function App() {
   return (
     <div className="min-h-screen bg-[#111827] text-[#f8fafc] selection:bg-purple-500/30 font-sans">
@@ -12,6 +21,35 @@ function App() {
         <div className="absolute -top-32 -left-32 w-[28rem] h-[28rem] rounded-full bg-blue-500/10 blur-3xl animate-float-slow" />
         <div className="absolute top-1/3 -right-40 w-[30rem] h-[30rem] rounded-full bg-purple-500/10 blur-3xl animate-float-reverse" />
         <div className="absolute bottom-0 left-1/3 w-[24rem] h-[24rem] rounded-full bg-cyan-400/5 blur-3xl animate-glow" />
+
+        <div className="absolute inset-0 portfolio-grid" />
+        <div className="absolute inset-0 background-vignette" />
+
+        <div className="background-stream stream-one" />
+        <div className="background-stream stream-two" />
+        <div className="background-stream stream-three" />
+
+        {backgroundNodes.map((node, index) => (
+          <span
+            key={index}
+            className="background-node"
+            style={{ left: node.left, top: node.top, animationDelay: node.delay }}
+          />
+        ))}
+
+        <div className="ambient-particles">
+          {Array.from({ length: 18 }).map((_, index) => (
+            <span
+              key={index}
+              className="ambient-particle"
+              style={{
+                left: `${(index * 17) % 100}%`,
+                animationDelay: `${(index % 7) * -1.7}s`,
+                animationDuration: `${10 + (index % 6) * 2}s`,
+              }}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Navigation */}
