@@ -25,7 +25,7 @@ const skillCategories = [
     {
         title: "Cloud & DevOps",
         icon: <Globe className="w-6 h-6 text-orange-400" />,
-        skills: ["AWS ECS Fargate", "AWS RDS", "AWS ECR", "Application Load Balancer", "Docker", "Terraform", "GitHub Actions", "CI/CD"]
+        skills: ["AWS EC2", "AWS ECS Fargate", "AWS RDS", "AWS ECR", "Application Load Balancer", "AWS IAM", "AWS CloudWatch", "Docker", "Terraform", "GitHub Actions", "CI/CD"]
     },
     {
         title: "Tools & Ecosystem",
