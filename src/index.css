@@ -92,20 +92,53 @@
     transition: transform 0.25s ease;
   }
 
-  .nav-link:hover::after {
-    transform: scaleX(1);
+  .nav-link:hover::after { transform: scaleX(1); }
+
+  .animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+  .animate-float-reverse { animation: float-reverse 10s ease-in-out infinite; }
+  .animate-glow { animation: soft-glow 4s ease-in-out infinite; }
+  .animate-drift { animation: drift 9s ease-in-out infinite; }
+  .animate-drift-reverse { animation: drift-reverse 11s ease-in-out infinite; }
+  .animate-orbit { animation: orbit 16s linear infinite; transform-origin: center; }
+  .animate-orbit-reverse { animation: orbit-reverse 20s linear infinite; transform-origin: center; }
+  .animate-particle { animation: particle-flow 5s ease-in-out infinite; }
+  .animate-scan { animation: scan 3.5s ease-in-out infinite; }
+
+  .skill-pill {
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
   }
 
-  .animate-float-slow {
-    animation: float-slow 8s ease-in-out infinite;
+  .skill-pill:hover {
+    transform: translateY(-3px) scale(1.03);
+    border-color: rgba(167, 139, 250, 0.45);
+    background: rgba(99, 102, 241, 0.12);
+    box-shadow: 0 8px 24px rgba(79, 70, 229, 0.14);
   }
 
-  .animate-float-reverse {
-    animation: float-reverse 10s ease-in-out infinite;
+  .project-card {
+    transform-style: preserve-3d;
+    transition: transform 0.45s cubic-bezier(.2,.8,.2,1), box-shadow 0.45s ease, border-color 0.35s ease;
   }
 
-  .animate-glow {
-    animation: soft-glow 4s ease-in-out infinite;
+  .project-card:hover {
+    transform: perspective(900px) rotateX(2deg) rotateY(-2deg) translateY(-9px);
+  }
+
+  .project-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(120deg, transparent 20%, rgba(129,140,248,.22), transparent 45%);
+    background-size: 220% 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .35s ease;
+  }
+
+  .project-card:hover::before {
+    opacity: 1;
+    animation: gradient-shift 2.5s linear infinite;
   }
 }
 
@@ -122,6 +155,37 @@
 @keyframes soft-glow {
   0%, 100% { opacity: 0.45; }
   50% { opacity: 0.9; }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-2deg); }
+  50% { transform: translate3d(18px, -24px, 0) rotate(3deg); }
+}
+
+@keyframes drift-reverse {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(2deg); }
+  50% { transform: translate3d(-22px, 18px, 0) rotate(-3deg); }
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@keyframes orbit-reverse {
+  from { transform: rotate(360deg) translateX(190px) rotate(-360deg); }
+  to { transform: rotate(0deg) translateX(190px) rotate(0deg); }
+}
+
+@keyframes particle-flow {
+  0%, 100% { transform: translate3d(0, 8px, 0); opacity: .2; }
+  50% { transform: translate3d(30px, -35px, 0); opacity: .9; }
+}
+
+@keyframes scan {
+  0% { transform: translateY(-120%); opacity: 0; }
+  25%, 70% { opacity: .45; }
+  100% { transform: translateY(420%); opacity: 0; }
 }
 
 @keyframes gradient-shift {
